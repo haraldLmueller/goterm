@@ -209,9 +209,9 @@ func Height() int {
 	if err != nil {
 		// returns math.MinInt32 if we could not retrieve the height of console window,
 		// like VSCode debugging console
-		if errors.Is(err, unix.EOPNOTSUPP) {
-			return math.MinInt32
-		}
+//		if errors.Is(err, unix.EOPNOTSUPP) {
+//			return math.MinInt32
+//		}
 		return -1
 	}
 	return int(ws.Row)
