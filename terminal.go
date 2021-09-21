@@ -16,13 +16,10 @@ package goterm
 import (
 	"bufio"
 	"bytes"
-	"errors"
 	"fmt"
-	"math"
 	"os"
 	"strings"
 
-	"golang.org/x/sys/unix"
 )
 
 // Reset all custom styles
